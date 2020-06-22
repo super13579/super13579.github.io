@@ -1,33 +1,16 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <body>
-<div class="header">
-  <h1>Hello!!!! Welcome to SP's page</h1>
-  <img src="https://miro.medium.com/fit/c/173/173/1*s9AK-QrQQv__UaP0SjtVoQ.jpeg" alt="Simply Easy Learning" width="200"
-         height="200">
-</div>
-<input type="button" value="今天星期幾" onClick="hi_and_bye();">
-<SCRIPT language="JavaScript">
-<!--
-    function hi_and_bye()
-    {
-        var enabled = 0;
-        today = new Date();
-        var day;
-        var date;
-        if (today.getDay() == 0) day = "星期日"
-        if (today.getDay() == 1) day = "星期一"
-        if (today.getDay() == 2) day = "星期二"
-        if (today.getDay() == 3) day = "星期三"
-        if (today.getDay() == 4) day = "星期四"
-        if (today.getDay() == 5) day = "星期五"
-        if (today.getDay() == 6) day = "星期六"
-        date = " 今天是西元 " + (today.getFullYear()) + " 年" + (today.getMonth() + 1) + " 月 " + today.getDate() + " 日 " + day + " "+today.getHours()+":"+today.getMinutes();
-
-        document.getElementById('todayiswhatdate').textContent = date
-    }
-//-->
-</SCRIPT>
-<p id='todayiswhatdate'></p>
+    <div class="header">
+      <h1>Hello!!!! Welcome to SP's page</h1>
+      <img src="https://miro.medium.com/fit/c/173/173/1*s9AK-QrQQv__UaP0SjtVoQ.jpeg" alt="Simply Easy Learning" width="200"
+             height="200">
+    </div>
+    <input type="text" id="tokentext">
+    <input type="button" id="tokenstart" value="斷詞" >
+    <p id="tokensword"></p>
+    <script src="tokenizer.js"></script>
 </body>
 </html>
