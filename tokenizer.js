@@ -4,7 +4,8 @@ window.onload = function () {
 		axios.get('./data/TW_tokens.txt').then((response) => {
 			if (response.status === 200){
 				var text2 = response.data
-				console.log(text2)
+				// console.log(text2)
+				// mytext = text2.split("\r\n")
 				mytext = text2.split("\r\n")
 			}
 		}).then(callback)
