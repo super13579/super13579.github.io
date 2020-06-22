@@ -6,7 +6,7 @@ window.onload = function () {
 				var text2 = response.data
 				// console.log(text2)
 				// mytext = text2.split("\r\n")
-				mytext = text2.split("\r\n")
+				mytext = text2.split("\n")
 			}
 		}).then(callback)
 	}
