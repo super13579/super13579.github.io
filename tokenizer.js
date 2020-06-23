@@ -21,18 +21,22 @@ window.onload = function () {
 		}
 	}
 	function dowork () {
-		console.log(mytext)
 		var simplit = mytext;
-		console.log(simplit.includes("我"))
 		var tradition = mytext;
-		const text = document.getElementById("tokentext").value
+		const text = document.getElementById("myTextArea").value
+		const chinesePunctuation = [
+		    ' ','·', '×', '—', '‘', '’', '“', '”', '…',
+		    '、', '。', '《', '》', '『', '』', '【', '】',
+		    '！', '（', '）', '，', '：', '；', '？'
+		]
 		// var text = '請注意，重新給參數指定一個對象(物件)，並不會對函數的外部有任何影響，因為這樣只是改變了參數的值，而不是改變了對象的一個屬性值：'
 		var token_list = []
 		var i=0
 
 	  while (i < text.length) {
 	    var findtoken = 0
-	    var j=text.length-i
+	    // var j=text.length-i
+	    var j=10
 	    while (j>=1){
 	      var token = text.slice(i, i + (j))
 	      /* console.log(token) */
@@ -44,14 +48,18 @@ window.onload = function () {
 	      }
 	      j = j-1
 	    }
+	    var token = text.slice(i,i+1)
 	    if (findtoken!=1){
-	      token_list.push(text.slice(i,i+1))
-	      i = i+1
+	    	if (!chinesePunctuation.includes(token)){
+	    		token_list.push(token) 
+	    	}
+	    	i = i+1
 	    }
 	  }
 	  console.log(token_list)
-	  document.getElementById('tokensword').textContent = token_list;
-	console.log(document.getElementById('tokensword'))
+	  token_sentence = token_list.join(" ")
+	  document.getElementById('myTextArea').value = token_sentence.replace(/\n /g,"\n")
+	console.log(document.getElementById('myTextArea').value)
 	}
 	gettext()
 }
