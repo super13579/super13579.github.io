@@ -230,19 +230,37 @@ var myIcon = L.icon({
 });
 
 
+
+
 map.locate({setView: true, watch: true, maxZoom : 50000}) /* This will return map so you can do chaining */
-        .on('locationfound', function(e){
-            var marker = L.marker([e.latitude, e.longitude],{icon: myIcon}).bindPopup('Your are here :)');
-            var circle = L.circle([e.latitude, e.longitude], e.accuracy/2, {
-                weight: 1,
-                color: 'blue',
-                fillColor: '#cacaca',
-                fillOpacity: 0.2
-            });
-            map.addLayer(marker);
-            map.addLayer(circle);
-        })
-       .on('locationerror', function(e){
-            console.log(e);
-            alert("Location access denied.");
-        });
+       //  .on('locationfound', function(e){
+       //      var marker = L.marker([e.latitude, e.longitude],{icon: myIcon}).bindPopup('Your are here :)');
+       //      var circle = L.circle([e.latitude, e.longitude], e.accuracy/2, {
+       //          weight: 1,
+       //          color: 'blue',
+       //          fillColor: '#cacaca',
+       //          fillOpacity: 0.2
+       //      });
+       //      map.addLayer(marker);
+       //      map.addLayer(circle);
+       //  })
+       // .on('locationerror', function(e){
+       //      console.log(e);
+       //      alert("Location access denied.");
+       //  });
+
+function onLocationFound(e) {
+    var radius = e.accuracy;
+
+    L.marker(e.latlng,{icon: myIcon}).addTo(map)
+        .bindPopup("Your are here :)");
+
+    L.circle(e.latlng, radius).addTo(map);
+}
+map.on('locationfound', onLocationFound);
+
+function onLocationError(e) {
+    alert(e.message);
+}
+
+map.on('locationerror', onLocationError);
