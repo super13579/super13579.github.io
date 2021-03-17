@@ -236,7 +236,7 @@ var myIcon = L.icon({
 
 
 
-map.locate({setView: false,  maxZoom : 50000}) /* This will return map so you can do chaining */
+map.locate({setView: false}) /* This will return map so you can do chaining */
        //  .on('locationfound', function(e){
        //      var marker = L.marker([e.latitude, e.longitude],{icon: myIcon}).bindPopup('Your are here :)');
        //      var circle = L.circle([e.latitude, e.longitude], e.accuracy/2, {
@@ -253,13 +253,15 @@ map.locate({setView: false,  maxZoom : 50000}) /* This will return map so you ca
        //      alert("Location access denied.");
        //  });
 
+
 function onLocationFound(e) {
     var radius = e.accuracy;
 
     L.marker(e.latlng,{icon: myIcon}).addTo(map)
-        .bindPopup("Your are here :)").openPopup();
+        .bindPopup("Your are here :)");
 
     L.circle(e.latlng, radius).addTo(map);
+    map.setView(e.latlng,50);
 }
 map.on('locationfound', onLocationFound);
 
