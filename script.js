@@ -1,10 +1,10 @@
 var map = L.map('map', {
-    center: [22.604964, 120.300476],
-    zoom: 16
+    center: [25.0585312, 121.6061037],
+    zoom: 20
 });
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
 
 L.marker([25.0585312, 121.6061037]).addTo(map)
