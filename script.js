@@ -232,7 +232,7 @@ var myIcon = L.icon({
 
 
 
-map.locate({setView: true,  maxZoom : 50000}) /* This will return map so you can do chaining */
+map.locate({setView: false,  maxZoom : 50000}) /* This will return map so you can do chaining */
        //  .on('locationfound', function(e){
        //      var marker = L.marker([e.latitude, e.longitude],{icon: myIcon}).bindPopup('Your are here :)');
        //      var circle = L.circle([e.latitude, e.longitude], e.accuracy/2, {
