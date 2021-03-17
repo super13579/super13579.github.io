@@ -226,7 +226,11 @@ L.marker([25.0487275, 121.5946482]).addTo(map)
     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10264982.html">南港公園靜巷一樓適合住家辦公或商業空間等</a><h1>35,800 元/月</h1><h1>坪數 :  38坪</h1>');
 
 var myIcon = L.icon({
-    iconUrl: 'Toicon-icon-avocado-locate.svg'
+    iconUrl: 'Toicon-icon-avocado-locate.png',
+    iconSize: [32, 32],
+    iconAnchor: [16, 32],
+    popupAnchor: [0, -40]
+
 });
 
 
@@ -253,7 +257,7 @@ function onLocationFound(e) {
     var radius = e.accuracy;
 
     L.marker(e.latlng,{icon: myIcon}).addTo(map)
-        .bindPopup("Your are here :)");
+        .bindPopup("Your are here :)").openPopup();
 
     L.circle(e.latlng, radius).addTo(map);
 }
