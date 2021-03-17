@@ -9,7 +9,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
 
-map.locate({setView: true, maxZoom: 13});
 
 L.marker([25.0537071, 121.5917962]).addTo(map)
     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10582290.html">辦公室權狀196坪出租方正格局</a><h1>176,400 元/月</h1><h1>坪數 :  196坪</h1>')
@@ -334,16 +333,3 @@ L.marker([25.0487275, 121.5946482]).addTo(map)
     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10264982.html">南港公園靜巷一樓適合住家辦公或商業空間等</a><h1>35,800 元/月</h1><h1>坪數 :  38坪</h1>')
     .openPopup();
 
-
-function onLocationFound(e) {
-    var radius = e.accuracy;
-    L.marker(e.latlng).addTo(map);
-}
-
-map.on('locationfound', onLocationFound);
-
-function onLocationError(e) {
-    alert(e.message);
-}
-
-map.on('locationerror', onLocationError);
