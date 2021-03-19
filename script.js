@@ -201,25 +201,20 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10303358.html">新裝潢/24h管理/82坪辦公室</a><h1>100,000 元/月</h1><h1>坪數 :  82坪</h1>');
 // L.marker([25.0585312, 121.6061037]).addTo(map)
 //     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10271741.html">最優質企業總部交通便捷提升企業形象首選</a><h1>150,000 元/月</h1><h1>坪數 :  123.75坪</h1>');
-L.marker([25.0614384, 121.61281229999999]).addTo(map)
+
+L.marker([25.053507, 121.6140897]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10396867.html">南港展覽館站一樓門口可停車</a><h1>30,000 元/月</h1><h1>坪數 :  25.74坪</h1>');
+L.marker([25.0614384, 121.6128123]).addTo(map)
     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10616191.html">[風雲地產]-近南軟大空間優質辦公室</a><h1>32,000 元/月</h1><h1>坪數 :  34.02坪</h1>');
 L.marker([25.0456093, 121.6143284]).addTo(map)
-    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10637399.html">近中研院電梯雅靜辦公,優質環境,可住辦</a><h1>32,000 元/月</h1><h1>坪數 :  38.88坪</h1>');
-L.marker([25.048095999999997, 121.58443600000001]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10648361.html">近中研院電梯雅靜辦公,優質環境,可住辦</a><h1>32,000 元/月</h1><h1>坪數 :  38.88坪</h1>');
+L.marker([25.0488676, 121.5852076]).addTo(map)
     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10641252.html">辦公室分租!!!</a><h1>25,000 元/月</h1><h1>坪數 :  60坪</h1>');
-L.marker([25.0530987, 121.61344150000001]).addTo(map)
-    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10264405.html">南港工業辦公室</a><h1>25,000 元/月</h1><h1>坪數 :  26坪</h1>');
-L.marker([25.053507, 121.61408970000001]).addTo(map)
-    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10396867.html">南港展覽館站一樓門口可停車</a><h1>30,000 元/月</h1><h1>坪數 :  25.74坪</h1>');
-    
-L.marker([25.055347, 121.6009832]).addTo(map)
-    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10410768.html">一樓出租社區型店面*停車方便</a><h1>28,000 元/月</h1><h1>坪數 :  27.5坪</h1>');
-L.marker([25.0561765, 121.6142485]).addTo(map)
-    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10430247.html">辦005南港採光工作室</a><h1>25,000 元/月</h1><h1>坪數 :  30坪</h1>');
-L.marker([25.0529760, 121.6159020]).addTo(map)
-    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10630539.html">租◎南港展覽館250M●獨戶機能住辦二樓</a><h1>35,000 元/月</h1><h1>坪數 :  41.122坪</h1>');
+
+L.marker([25.039488, 121.591759]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10653497.html">文教區~近公園~市場~捷運</a><h1>33,000 元/月</h1><h1>坪數 :  25坪</h1>');
 L.marker([25.0456093, 121.6143284]).addTo(map)
-    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10640731.html">電梯大樓,戶數少,隨時入駐</a><h1>32,000 元/月</h1><h1>坪數 :  38.88坪</h1>');
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10648428.html">電梯大樓,戶數少,隨時入駐</a><h1>32,000 元/月</h1><h1>坪數 :  38.88坪</h1>');
 L.marker([25.0565063, 121.6033523]).addTo(map)
     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10340017.html">南港近學校、捷運鬧中取靜的住辦好屋</a><h1>33,000 元/月</h1><h1>坪數 :  35坪</h1>');
 
