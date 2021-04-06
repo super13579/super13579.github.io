@@ -1,5 +1,5 @@
 var map = L.map('map', {
-    center: [25.0585312, 121.6061037],
+    center: [25.0326662, 121.4801454],
     zoom: 20
 });
 
@@ -219,18 +219,43 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10340017.html">南港近學校、捷運鬧中取靜的住辦好屋</a><h1>33,000 元/月</h1><h1>坪數 :  35坪</h1>');
 
 
-L.marker([25.0614384, 121.6128123]).addTo(map)
-    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10692167.html">[風雲地產]-近南軟大空間優質辦公室</a><h1>32,000 元/月</h1><h1>坪數 :  34.02坪</h1>');
-L.marker([25.049648, 121.5880864]).addTo(map)
-    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10682314.html">方正1樓明亮停車交通便利宜辦公辦住</a><h1>26,000 元/月</h1><h1>坪數 :  22.73坪</h1>');
-L.marker([25.0565111, 121.6014621]).addTo(map)
-    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10422813.html">@@南港捷運商圈旁*優質機能商辦</a><h1>40,000 元/月</h1><h1>坪數 :  46坪</h1>');
-L.marker([25.053507, 121.6140897]).addTo(map)
-    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10396867.html">南港展覽館站一樓門口可停車</a><h1>30,000 元/月</h1><h1>坪數 :  25.74坪</h1>');
-L.marker([25.0488676, 121.5852076]).addTo(map)
-    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10641252.html">辦公室分租!!!</a><h1>25,000 元/月</h1><h1>坪數 :  60坪</h1>');
-L.marker([25.0444565, 121.5835173]).addTo(map)
-    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10622748.html">後山埤站2分鐘一樓住辦(門口可停車)</a><h1>40,000 元/月</h1><h1>坪數 :  29.17坪</h1>');
+// L.marker([25.0614384, 121.6128123]).addTo(map)
+//     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10692167.html">[風雲地產]-近南軟大空間優質辦公室</a><h1>32,000 元/月</h1><h1>坪數 :  34.02坪</h1>');
+// L.marker([25.049648, 121.5880864]).addTo(map)
+//     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10682314.html">方正1樓明亮停車交通便利宜辦公辦住</a><h1>26,000 元/月</h1><h1>坪數 :  22.73坪</h1>');
+// L.marker([25.0565111, 121.6014621]).addTo(map)
+//     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10422813.html">@@南港捷運商圈旁*優質機能商辦</a><h1>40,000 元/月</h1><h1>坪數 :  46坪</h1>');
+// L.marker([25.053507, 121.6140897]).addTo(map)
+//     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10396867.html">南港展覽館站一樓門口可停車</a><h1>30,000 元/月</h1><h1>坪數 :  25.74坪</h1>');
+// L.marker([25.0488676, 121.5852076]).addTo(map)
+//     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10641252.html">辦公室分租!!!</a><h1>25,000 元/月</h1><h1>坪數 :  60坪</h1>');
+// L.marker([25.0444565, 121.5835173]).addTo(map)
+//     .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10622748.html">後山埤站2分鐘一樓住辦(門口可停車)</a><h1>40,000 元/月</h1><h1>坪數 :  29.17坪</h1>');
+
+L.marker([25.0067894, 121.4616680]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-9899400.html">個人/共享辦公室輔導個人低成本創業</a><h1>3,500 元/月</h1><h1>坪數 :  30坪</h1>');
+L.marker([25.02479, 121.460258]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10573775.html">新埔四維商圈辦公室，工作室出租，分租</a><h1>27,000 元/月</h1><h1>坪數 :  40坪</h1>');
+L.marker([25.0067894, 121.4616680]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-9899400.html">個人/共享辦公室輔導個人低成本創業</a><h1>3,500 元/月</h1><h1>坪數 :  30坪</h1>');
+L.marker([25.02479, 121.460258]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10573775.html">新埔四維商圈辦公室，工作室出租，分租</a><h1>27,000 元/月</h1><h1>坪數 :  40坪</h1>');
+L.marker([25.0239735, 121.4802532]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10601347.html">華翠大橋旁二樓住辦-龍邑不動產</a><h1>30,000 元/月</h1><h1>坪數 :  53.12坪</h1>');
+L.marker([25.0077379, 121.47178]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10588003.html">正漢生東路辦公可吊掛招牌顯眼</a><h1>27,000 元/月</h1><h1>坪數 :  29.9坪</h1>');
+L.marker([25.008296, 121.453791]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10607460.html">府中站辦公三樓美寓~鄰巷口/好厝底!</a><h1>25,000 元/月</h1><h1>坪數 :  26.93坪</h1>');
+L.marker([25.0062116, 121.4591826]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10698711.html">可營登!大坪數近府中捷運方正辦公</a><h1>25,000 元/月</h1><h1>坪數 :  34.35坪</h1>');
+L.marker([25.0350259, 121.4715565]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10546194.html">採光佳適辦公網拍歡迎來電</a><h1>30,000 元/月</h1><h1>坪數 :  22坪</h1>');
+L.marker([25.0137490, 121.4733210]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-6349061.html">板新環狀線旁出口走路3分鐘</a><h1>28,000 元/月</h1><h1>坪數 :  29坪</h1>');
+L.marker([25.0083486, 121.4609716]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10546433.html">府中捷運五分鐘分租辦公室</a><h1>9,000 元/月</h1><h1>坪數 :  24.0911坪</h1>');
+L.marker([25.0326662, 121.4801454]).addTo(map)
+    .bindPopup('<a href="https://rent.591.com.tw/rent-detail-10439885.html">可供辦公室.工作室等使用</a><h1>30,000 元/月</h1><h1>坪數 :  42坪</h1>');
 
 var myIcon = L.icon({
     iconUrl: 'Toicon-icon-avocado-locate.png',
